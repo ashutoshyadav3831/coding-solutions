@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:10:16.228Z  
+**Submitted:** 2026-09-30T15:11:03.435Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -76,13 +76,13 @@ int main() {
 	        cin>>a[i];
 	    }
 	    for(int i=0;i<n;i++){
-	        if(a[i]-a[i-1]!=1){
+	        if(a[i+1]-a[i]!=1){
 	           
 	       
 	            count++;
 	        }
 	    }
-	    cout<<count<<endl;
+	    cout<<count-1<<endl;
 	}
 
 }
