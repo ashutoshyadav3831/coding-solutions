@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:54:27.187Z  
+**Submitted:** 2026-09-30T14:55:29.944Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -79,7 +79,7 @@ int main() {
 	            j++;
 	            continue;
 	        }else{
-	            cout<<i;
+	            cout<<i<<" ";
 	            count++;
 	        }
 	        if(count==k){
