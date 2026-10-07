@@ -62,44 +62,58 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:03:14.866Z  
+**Submitted:** 2026-10-07T15:06:46.503Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	int t;
-	cin>>t;
-	while(t--){
-	    int n,m;
-	    cin>>n>>m;
-	    int count=0 ,count2=0,ans=0;
-	    string s[n],l[m];
-	    for(int i=0;i<n;i++){
-	        cin>>s[i];
-	    }
-	    for(int i=0;i<m;i++){
-	        cin>>l[i];
-	    }
-	    for(int i=0;i<n;i++){
-	        for(int j=0;j<m;j++)
-	        if(s[i]==l[j]){
-	            count2=0;
-	            count++;
-	            ans=max(count,ans);
-	        }else{
-	            count=0;
-	            count2++;
-	            ans=max(count2,ans);
-	            
-	        }
-	    }
-	    cout<<ans<<endl;
-	}
+    int t;
+    cin >> t;
 
+    while (t--) {
+        int n, m;
+        cin >> n >> m;
+
+        int count = 0, count2 = 0, ans = 0;
+
+        string s[n];
+        string l[m];
+
+        for (int i = 0; i < n; i++) {
+            cin >> s[i];
+        }
+
+        for (int i = 0; i < m; i++) {
+            cin >> l[i];
+        }
+
+        for (int i = 0; i < n; i++) {
+            bool found = false;
+
+            for (int j = 0; j < m; j++) {
+                if (s[i] == l[j]) {
+                    found = true;
+                    break;
+                }
+            }
+
+            if (found) {
+                count++;
+                count2 = 0;
+                ans = max(ans, count);
+            } 
+            else {
+                count2++;
+                count = 0;
+                ans = max(ans, count2);
+            }
+        }
+
+        cout << ans << endl;
+    }
 }
-
 ```
 
 ---
