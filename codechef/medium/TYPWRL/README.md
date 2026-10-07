@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:06:46.503Z  
+**Submitted:** 2026-10-07T15:10:41.851Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -76,42 +76,32 @@ int main() {
         int n, m;
         cin >> n >> m;
 
-        int count = 0, count2 = 0, ans = 0;
+        string s, l;
+        cin >> s >> l;
 
-        string s[n];
-        string l[m];
-
-        for (int i = 0; i < n; i++) {
-            cin >> s[i];
-        }
-
-        for (int i = 0; i < m; i++) {
-            cin >> l[i];
-        }
+        int count = 0, ans = 0;
+        bool prevLeft = false;
 
         for (int i = 0; i < n; i++) {
-            bool found = false;
+            bool left = false;
 
             for (int j = 0; j < m; j++) {
                 if (s[i] == l[j]) {
-                    found = true;
+                    left = true;
                     break;
                 }
             }
 
-            if (found) {
+            if (i == 0 || left != prevLeft)
+                count = 1;
+            else
                 count++;
-                count2 = 0;
-                ans = max(ans, count);
-            } 
-            else {
-                count2++;
-                count = 0;
-                ans = max(ans, count2);
-            }
+
+            prevLeft = left;
+            ans = max(ans, count);
         }
 
-        cout << ans << endl;
+        cout << ans << '\n';
     }
 }
 ```
