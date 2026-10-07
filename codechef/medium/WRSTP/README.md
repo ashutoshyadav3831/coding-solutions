@@ -80,17 +80,39 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:11:20.866Z  
+**Submitted:** 2026-10-07T15:11:41.821Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int t;
+    cin >> t;
 
+    while (t--) {
+        int n;
+        cin >> n;
+
+        string s;
+        cin >> s;
+
+        int x = 0, y = 0;
+
+        for (char c : s) {
+            if (c == 'U') y++;
+            else if (c == 'D') y--;
+            else if (c == 'L') x--;
+            else if (c == 'R') x++;
+        }
+
+        if ((abs(x) == 2 && y == 0) ||
+            (x == 0 && abs(y) == 2))
+            cout << "YES\n";
+        else
+            cout << "NO\n";
+    }
 }
-
 ```
 
 ---
