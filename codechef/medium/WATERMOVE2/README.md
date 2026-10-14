@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T15:05:42.858Z  
+**Submitted:** 2026-10-14T15:11:26.401Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -80,7 +80,7 @@ int main() {
 	    }
 	    int total=0;
 	    int i=n-1;
-	    while(k){
+	    while(k>=0){
 	        total+=a[i];
 	        i--;
 	        k--;
