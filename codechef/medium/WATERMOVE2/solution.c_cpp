@@ -17,7 +17,7 @@ int main() {
 	    int total=0;
 	    int i=n-1;
 	    while(k){
-	        total+=a[n-1];
+	        total+=a[i];
 	        i--;
 	        k--;
 	    }
