@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T14:54:25.571Z  
+**Submitted:** 2026-10-14T14:56:24.248Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -69,7 +69,7 @@ int main() {
 	while(t--){
 	    int n,k;
 	    cin>>n>>k;
-	    int a[n];
+	    vector<int> a(n);
 	    for(int i=0;i<n;i++){
 	        cin>>a[i];
 	    }
