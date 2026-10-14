@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T15:00:36.672Z  
+**Submitted:** 2026-10-14T15:02:55.916Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -66,6 +66,7 @@ using namespace std;
 
 int main() {
 	int t;
+	cin>>t;
 	while(t--){
 	    int n,k;
 	    cin>>n>>k;
