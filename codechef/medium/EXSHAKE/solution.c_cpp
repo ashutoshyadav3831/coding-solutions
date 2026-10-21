@@ -1,38 +1,19 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int T;
-    cin >> T;
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,m;
+	    cin>>n>>m;
+	    vector <int> a(n);
+	    for(int i=0;i<n;i++){
+	        cin>>a[i];
+	    }
+	    n=sqrt(2*m+1);
+	    sort(a.begin(),a.end());
+	    cout<<n;
+	}
 
-    while (T--) {
-        int N;
-        long long M;
-        cin >> N >> M;
-
-        vector<int> A(N);
-        for (int i = 0; i < N; i++)
-            cin >> A[i];
-
-        sort(A.begin(), A.end());
-
-        long long people = 0;
-        int groups = 0;
-
-        for (int i = 0; i < N; i++) {
-            long long next = people + A[i];
-
-            if (next * (next - 1) / 2 <= M) {
-                people = next;
-                groups++;
-            } else {
-                break;
-            }
-        }
-
-        cout << groups << '\n';
-    }
-
-    return 0;
 }
