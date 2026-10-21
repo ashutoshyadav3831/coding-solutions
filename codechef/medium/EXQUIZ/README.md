@@ -57,15 +57,42 @@ Test case $4$: Since the final score is $0$, all questions can be skipped.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T15:03:26.865Z  
+**Submitted:** 2026-10-21T15:03:42.992Z  
 
 ```c_cpp
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int T;
+    cin >> T;
 
+    while (T--) {
+        int N, S;
+        cin >> N >> S;
+
+        if (S < -N || S > 4 * N) {
+            cout << -1 << '\n';
+            continue;
+        }
+
+        int ans = -1;
+
+        for (int c = 0; c <= N; c++) {
+            int w = 4 * c - S;
+
+            if (w >= 0 && c + w <= N) {
+                int attempts = c + w;
+                if (ans == -1 || attempts < ans)
+                    ans = attempts;
+            }
+        }
+
+        cout << ans << '\n';
+    }
+
+    return 0;
 }
 
 ```
