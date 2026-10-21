@@ -1,7 +1,34 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int T;
+    cin >> T;
 
+    while (T--) {
+        int N, S;
+        cin >> N >> S;
+
+        if (S < -N || S > 4 * N) {
+            cout << -1 << '\n';
+            continue;
+        }
+
+        int ans = -1;
+
+        for (int c = 0; c <= N; c++) {
+            int w = 4 * c - S;
+
+            if (w >= 0 && c + w <= N) {
+                int attempts = c + w;
+                if (ans == -1 || attempts < ans)
+                    ans = attempts;
+            }
+        }
+
+        cout << ans << '\n';
+    }
+
+    return 0;
 }
