@@ -3,6 +3,16 @@ using namespace std;
 void solve () {
     int n , k ; cin >> n >> k ; 
     string s ; cin >> s ; 
+    
+    int answer = 0 ; 
+    int last = 0 ; 
+    int right = s.size()  ; 
+     
+    while(right >= 0 ) {
+        int calc = max (1 , right+1 - k ) ; 
+        if (s[right] == '1' ) {}
+    }
+    
 }
 
 int main() {
