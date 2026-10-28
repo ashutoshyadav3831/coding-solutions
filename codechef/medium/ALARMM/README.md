@@ -70,7 +70,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:47:02.684Z  
+**Submitted:** 2026-10-28T15:50:02.565Z  
 
 ```c_cpp
 // #include <bits/stdc++.h>
@@ -171,11 +171,13 @@ void solve () {
     int i = n-1; int answer = 0; 
     
     while(i>=0) {
-        if (s[i] == '1') {answer ++ ; i = i - k ; }
+        if (s[i] == '1') {
+            answer ++ ; i = i - k ;
+            }
         else i--  ; 
     }
     
-    cout << answer << '/n' ; 
+    cout << answer << endl ; 
 }
     
     
