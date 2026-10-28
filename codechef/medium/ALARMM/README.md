@@ -70,7 +70,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:26:14.174Z  
+**Submitted:** 2026-10-28T15:29:08.168Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -88,8 +88,8 @@ void solve () {
         if (s[right-1] == '1' ) {
             right = calc ; 
             answer ++ ;
+            continue ; 
         }
-        else 
         right -- ; 
     }
     
