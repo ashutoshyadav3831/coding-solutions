@@ -66,7 +66,7 @@ BBBBAAAAABBBBBBB
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T14:43:21.901Z  
+**Submitted:** 2026-10-28T14:45:15.190Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -80,7 +80,7 @@ int main() {
 	    cin>>s;
 	    int count =0;
 	    for(int i=0;i<s.length();i++){
-	        if(s[i]==s[i+1]==s[i+2]){
+	        if(s[i]==s[i+1] && s[i]==s[i+2]){
 	            count++;
 	            i=i+2;
 	        }
