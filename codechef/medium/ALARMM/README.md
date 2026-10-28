@@ -70,7 +70,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:38:19.155Z  
+**Submitted:** 2026-10-28T15:43:18.570Z  
 
 ```c_cpp
 // #include <bits/stdc++.h>
@@ -123,10 +123,6 @@ Output
 
 
 
-
-
-
-
 // #include <bits/stdc++.h>
 // using namespace std;
 
@@ -166,7 +162,27 @@ Output
 
 
 
-
+#include <bits/stdc++.h>
+using namespace std;
+void solve () {
+    int n , k ; cin >> n >> k ; 
+    string s ; cin >> s ; 
+    
+    int i = n-1; int answer = 0; 
+    
+    while(i>=0) {
+        if (s[i] == '1') {answer ++ ; i = i - k ; }
+        else i--  ; 
+    }
+    
+    cout << answer << '/n' ; 
+}
+    
+    
+int main () {
+    int t ; cin >> t ; 
+    while(t--) solve () ; 
+}
 
 
 ```
