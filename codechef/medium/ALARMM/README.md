@@ -70,7 +70,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:09:02.160Z  
+**Submitted:** 2026-10-28T15:17:41.160Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -78,6 +78,16 @@ using namespace std;
 void solve () {
     int n , k ; cin >> n >> k ; 
     string s ; cin >> s ; 
+    
+    int answer = 0 ; 
+    int last = 0 ; 
+    for(int i =0  ; i<s.size() ;++i) {
+        int rough = max (1,i-k) ; 
+        if (s[i] == '1' && rough <= last ) {
+            last = i + 1 ; 
+            answer ++ ; 
+        }
+    }
 }
 
 int main() {
