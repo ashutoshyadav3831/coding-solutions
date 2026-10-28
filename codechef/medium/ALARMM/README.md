@@ -70,7 +70,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:41:31.158Z  
+**Submitted:** 2026-10-28T15:47:46.560Z  
 
 ```c_cpp
 // #include <bits/stdc++.h>
@@ -117,10 +117,6 @@ Output
 // 	while(t--) solve () ; 
 
 // }
-
-
-
-
 
 
 
@@ -179,7 +175,7 @@ void solve () {
         else i--  ; 
     }
     
-    cout << answer << '/n' ; 
+    cout << answer << endl ; 
 }
     
     
