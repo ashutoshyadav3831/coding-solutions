@@ -96,7 +96,9 @@ void solve () {
     int i = n-1; int answer = 0; 
     
     while(i>=0) {
-        if (s[i] == '1') {answer ++ ; i = i - k ; }
+        if (s[i] == '1') {
+            answer ++ ; i = i - k ;
+            }
         else i--  ; 
     }
     
