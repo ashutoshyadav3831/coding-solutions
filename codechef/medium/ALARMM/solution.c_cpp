@@ -6,17 +6,13 @@ void solve () {
     
     int answer = 0 ; 
     int last = 0 ; 
-    int right = s.size()  ; 
-     
-    while(right >= 0 ) {
-        int calc = max (1 , right - k ) ; 
-        if (s[right-1] == '1' ) {
-            right = calc ; 
+    for(int i =0  ; i<s.size() ;++i) {
+        int rough = max (1,i-k) ; 
+        if (s[i] == '1' && rough <= last ) {
+            last = i + 1 ; 
             answer ++ ; 
         }
-        right -- ; 
     }
-    
 }
 
 int main() {
