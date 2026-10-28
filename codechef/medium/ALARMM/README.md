@@ -70,7 +70,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:54:36.837Z  
+**Submitted:** 2026-10-28T15:58:54.674Z  
 
 ```c_cpp
 // #include <bits/stdc++.h>
@@ -173,8 +173,7 @@ void solve () {
     while(i < s.size() ) {
         if (s[i] == '1') {
             answer ++ ;
-            if (k == 0 ) { i++ ; continue ; } 
-            i = i + k ;
+            i = i + k + 1 ;
             }
         else i++   ; 
     }
