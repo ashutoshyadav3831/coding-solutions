@@ -70,14 +70,21 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:06:13.167Z  
+**Submitted:** 2026-10-28T15:08:18.152Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
+void solve () {
+    int n , k ; cin >> n >> k ; 
+    string s ; cin >> s ; 
+}
 
 int main() {
 	// your code goes here
+	
+	int t ; cin >> t ; 
+	while(t--) solve () ; 
 
 }
 
