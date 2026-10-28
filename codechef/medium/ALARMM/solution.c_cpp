@@ -13,8 +13,8 @@ void solve () {
         if (s[right-1] == '1' ) {
             right = calc ; 
             answer ++ ;
+            continue ; 
         }
-        else 
         right -- ; 
     }
     
