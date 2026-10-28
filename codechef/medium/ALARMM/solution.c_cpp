@@ -100,7 +100,7 @@ void solve () {
         else i--  ; 
     }
     
-    cout << answer << endl ; 
+    cout << answer << '/n' ; 
 }
     
     
