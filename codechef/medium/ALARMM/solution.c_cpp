@@ -12,8 +12,9 @@ void solve () {
         int calc = max (1 , right - k ) ; 
         if (s[right-1] == '1' ) {
             right = calc ; 
-            answer ++ ; 
+            answer ++ ;
         }
+        else 
         right -- ; 
     }
     
