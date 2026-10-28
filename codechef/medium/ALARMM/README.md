@@ -70,7 +70,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:40:15.045Z  
+**Submitted:** 2026-10-28T15:41:05.162Z  
 
 ```c_cpp
 // #include <bits/stdc++.h>
@@ -179,7 +179,7 @@ void solve () {
         else i--  ; 
     }
     
-    cout << answer ; 
+    cout << answer << '/n' ; 
 }
     
     
