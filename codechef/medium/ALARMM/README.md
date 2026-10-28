@@ -70,95 +70,52 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:37:54.161Z  
+**Submitted:** 2026-10-28T15:36:26.180Z  
 
 ```c_cpp
-// #include <bits/stdc++.h>
-// using namespace std;
-// void solve () {
-//     int n , k ; cin >> n >> k ; 
-//     string s ; cin >> s ; 
-    
-//     // int answer = 0 ; 
-//     // int last = 0 ; 
-//     // int right = s.size()  ; 
-     
-//     // while(right >= 0 ) {
-//     //     int calc = max (1 , right - k ) ; 
-//     //     if (s[right-1] == '1' ) {
-//     //         right = calc ; 
-//     //         answer ++ ;
-//     //         continue ; 
-//     //     }
-//     //     right -- ; 
-//     // }
-    
-//     // cout << answer << '\n' ; 
-    
-    
-//     int answer = 0 ; 
-    
-//     int left = 0 , right = k-2 ; 
-//     while(right <= s.size() ) {
-//         bool flag = false ; 
-//         for(int i = left ; i <= right ; ++i ) {
-//             if (s[i] == '1') { answer ++ ; left = right + 1 ; right = left + k ;  }
-//         }
-//     }
-    
-//     cout << answer ; 
-    
-// }
-
-// int main() {
-// 	// your code goes here
-	
-// 	int t ; cin >> t ; 
-// 	while(t--) solve () ; 
-
-// }
-
-
-
-
-
-
-
-
-
-
 #include <bits/stdc++.h>
 using namespace std;
-
-void solve() {
-    int n, k;
-    cin >> n >> k;
-
-    string s;
-    cin >> s;
-
-    int answer = 0;
-    int i = 0;
-
-    while (i < n) {
-        if (s[i] == '1') {
-            answer++;
-            i += k;
-        } else {
-            i++;
+void solve () {
+    int n , k ; cin >> n >> k ; 
+    string s ; cin >> s ; 
+    
+    // int answer = 0 ; 
+    // int last = 0 ; 
+    // int right = s.size()  ; 
+     
+    // while(right >= 0 ) {
+    //     int calc = max (1 , right - k ) ; 
+    //     if (s[right-1] == '1' ) {
+    //         right = calc ; 
+    //         answer ++ ;
+    //         continue ; 
+    //     }
+    //     right -- ; 
+    // }
+    
+    // cout << answer << '\n' ; 
+    
+    
+    int answer = 0 ; 
+    
+    int left = 0 , right = k-2 ; 
+    while(right <= s.size() ) {
+        bool flag = false ; 
+        for(int i = left ; i <= right ; ++i ) {
+            if (s[i] == '1') { answer ++ ; left = right + 1 ; right = left + k ;  }
         }
     }
-
-    cout << answer << '\n';
+    
+    cout << answer ; 
+    
 }
 
 int main() {
-    int t;
-    cin >> t;
+	// your code goes here
+	
+	int t ; cin >> t ; 
+	while(t--) solve () ; 
 
-    while (t--) {
-        solve();
-    }
 }
 
 ```
