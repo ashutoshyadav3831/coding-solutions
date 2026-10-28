@@ -70,7 +70,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:14:24.162Z  
+**Submitted:** 2026-10-28T15:09:02.160Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -78,11 +78,6 @@ using namespace std;
 void solve () {
     int n , k ; cin >> n >> k ; 
     string s ; cin >> s ; 
-    
-    int last_occured = 0 ; 
-    for(int i =0  ; i<s.size() ;++i) {
-        if (s[i] == '1' &&  ) {}
-    }
 }
 
 int main() {
