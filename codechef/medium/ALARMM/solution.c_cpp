@@ -18,6 +18,8 @@ void solve () {
         right -- ; 
     }
     
+    cout << answer << '\n' ; 
+    
 }
 
 int main() {
