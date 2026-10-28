@@ -98,8 +98,7 @@ void solve () {
     while(i < s.size() ) {
         if (s[i] == '1') {
             answer ++ ;
-            if (k == 0 ) { i++ ; continue ; } 
-            i = i + k ;
+            i = i + k + 1 ;
             }
         else i++   ; 
     }
