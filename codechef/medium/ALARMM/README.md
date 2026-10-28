@@ -70,7 +70,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:24:01.810Z  
+**Submitted:** 2026-10-28T15:25:32.530Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -87,8 +87,9 @@ void solve () {
         int calc = max (1 , right - k ) ; 
         if (s[right-1] == '1' ) {
             right = calc ; 
-            answer ++ ; 
+            answer ++ ;
         }
+        else 
         right -- ; 
     }
     
