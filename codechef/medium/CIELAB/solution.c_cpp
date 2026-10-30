@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+long long a, b;
+cin>>a>>b;
+long long c = a-b;
+int d = c%10;
+if(d<9){
+    cout<<c+1;
+}
+else{
+    cout<<c-1<<endl;
+}
+}
