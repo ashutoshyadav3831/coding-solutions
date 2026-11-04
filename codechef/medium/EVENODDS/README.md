@@ -72,7 +72,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T14:44:26.561Z  
+**Submitted:** 2026-11-04T14:52:44.553Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -85,13 +85,26 @@ int main() {
 	    int n;
 	    cin>>n;
 	    int a[n];
+	    vector<int>v;
 	    for(int i=0;i<n;i++){
 	        cin>>a[i];
 	    }
 	  int  oddcount=0;
 	  for(int i=0;i<n;i++){
-	      if(a[i]/2==1){
+	      if(a[i]%2==1){
 	          oddcount++;
+	      }
+	  }
+	  if(oddcount==0){
+	      cout<<n<<endl;
+	  }elseif(oddcount%2==0){
+	      cout<<n<<endl;
+	  }else{
+	      
+	      for(int i=0;i<n;i++){
+	          if(a[i]%2==1){
+	              v.push_back(i);
+	          }
 	      }
 	  }
 	  
