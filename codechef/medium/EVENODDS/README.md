@@ -72,7 +72,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T14:58:45.024Z  
+**Submitted:** 2026-11-04T14:59:04.853Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -97,7 +97,7 @@ int main() {
 	  }
 	  if(oddcount==0){
 	      cout<<n<<endl;
-	  }elseif(oddcount%2==0){
+	  }else if(oddcount%2==0){
 	      cout<<n<<endl;
 	  }else{
 	      
