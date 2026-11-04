@@ -75,7 +75,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T15:08:21.854Z  
+**Submitted:** 2026-11-04T15:08:46.675Z  
 
 ```c_cpp
 
@@ -90,7 +90,7 @@ int main() {
         int n, m;
         cin >> n >> m;
 
-        int a[n][m];
+        char a[n][m];
 
         int minRow = n, maxRow = -1;
         int minCol = m, maxCol = -1;
@@ -99,7 +99,7 @@ int main() {
             for (int j = 0; j < m; j++) {
                 cin >> a[i][j];
 
-                if (a[i][j] == 1) {
+                if (a[i][j] == '1') {
                     minRow = min(minRow, i);
                     maxRow = max(maxRow, i);
 
