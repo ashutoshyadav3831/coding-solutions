@@ -72,7 +72,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T14:52:44.553Z  
+**Submitted:** 2026-11-04T14:58:45.024Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -106,6 +106,12 @@ int main() {
 	              v.push_back(i);
 	          }
 	      }
+	      
+	      int first = v[0];
+            int last = v.back();
+
+            int ans = max(n - first - 1, last);
+            cout << ans << endl;
 	  }
 	  
 	}
