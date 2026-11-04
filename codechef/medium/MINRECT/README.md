@@ -75,47 +75,15 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T15:08:02.236Z  
+**Submitted:** 2026-11-04T15:08:00.833Z  
 
 ```c_cpp
-
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
+	// your code goes here
 
-    while (t--) {
-        int n, m;
-        cin >> n >> m;
-
-        int a[n][m];
-
-        int minRow = n, maxRow = -1;
-        int minCol = m, maxCol = -1;
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                cin >> a[i][j];
-
-                if (a[i][j] == 1) {
-                    minRow = min(minRow, i);
-                    maxRow = max(maxRow, i);
-
-                    minCol = min(minCol, j);
-                    maxCol = max(maxCol, j);
-                }
-            }
-        }
-
-        int ans = (maxRow - minRow + 1) *
-                  (maxCol - minCol + 1);
-
-        cout << ans << endl;
-    }
-
-    return 0;
 }
 
 ```
