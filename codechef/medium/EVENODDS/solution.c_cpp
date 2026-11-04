@@ -29,6 +29,12 @@ int main() {
 	              v.push_back(i);
 	          }
 	      }
+	      
+	      int first = v[0];
+            int last = v.back();
+
+            int ans = max(n - first - 1, last);
+            cout << ans << endl;
 	  }
 	  
 	}
