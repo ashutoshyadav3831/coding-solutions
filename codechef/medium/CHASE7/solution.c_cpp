@@ -1,7 +1,15 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int R, B;
+    cin >> R >> B;
 
+    if (R <= 6 * B)
+        cout << "Yes";
+    else
+        cout << "No";
+
+    return 0;
 }
