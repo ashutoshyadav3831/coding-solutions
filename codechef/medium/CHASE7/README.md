@@ -64,15 +64,23 @@ It is impossible for Chef to win.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-11T14:32:52.791Z  
+**Submitted:** 2026-11-11T14:33:32.637Z  
 
 ```c_cpp
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int R, B;
+    cin >> R >> B;
 
+    if (R <= 6 * B)
+        cout << "Yes";
+    else
+        cout << "No";
+
+    return 0;
 }
 
 ```
