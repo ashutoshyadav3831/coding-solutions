@@ -68,16 +68,39 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-11T14:35:39.321Z  
+**Submitted:** 2026-11-11T14:35:41.107Z  
 
 ```c_cpp
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int T;
+    cin >> T;
 
+    while (T--) {
+        int N;
+        string S;
+        cin >> N >> S;
+
+        int ans = 0;
+
+        for (int i = 0; i < N; i++) {
+            int num = (S[i] - '0') * 10 +
+                      (S[(i + 1) % N] - '0');
+
+            if (num % 4 == 0) {
+                ans++;
+            }
+        }
+
+        cout << ans << endl;
+    }
+
+    return 0;
 }
+
 
 ```
 
