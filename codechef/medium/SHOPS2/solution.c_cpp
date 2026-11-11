@@ -1,7 +1,33 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int T;
+    cin >> T;
 
+    while (T--) {
+        int N, D;
+        cin >> N >> D;
+
+        int A[100], B[100];
+        int sumA = 0, sumB = 0, sumMin = 0;
+
+        for (int i = 0; i < N; i++) {
+            cin >> A[i];
+            sumA += A[i];
+        }
+
+        for (int i = 0; i < N; i++) {
+            cin >> B[i];
+            sumB += B[i];
+            sumMin += min(A[i], B[i]);
+        }
+
+        int ans = min({D + sumA, D + sumB, 2 * D + sumMin});
+
+        cout << ans << endl;
+    }
+
+    return 0;
 }
