@@ -68,7 +68,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T15:09:04.973Z  
+**Submitted:** 2026-11-18T15:11:07.839Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -93,7 +93,7 @@ int main() {
 	            v.push_back(s[i]);
 	        }
 	    }
-	    if(k<=v.size()){
+	    if(k >= v.size() && k <= n){
 	        cout<<"Yes\n";
 	    }else{
 	        cout<<"No\n";
