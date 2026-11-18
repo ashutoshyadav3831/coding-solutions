@@ -7,21 +7,20 @@ int main() {
 	while(t--){
 	    int n,k;
 	    cin>>n>>k;
-	    char s;
+	    string s;
 	    cin>>s;
 	    vector<char>v;
-	    int num;
 	    for(int i=0;i<n;i++){
 	        if(i==0){
 	            v.push_back(s[i]);
 	            
 	        }else if(s[i]==s[i-1]){
-	            i++;
+	            continue;
 	        }else{
 	            v.push_back(s[i]);
 	        }
 	    }
-	    if(k<=v.size){
+	    if(k<=v.size()){
 	        cout<<"Yes\n";
 	    }else{
 	        cout<<"No\n";
