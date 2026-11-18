@@ -68,7 +68,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T15:05:47.986Z  
+**Submitted:** 2026-11-18T15:09:04.973Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -80,21 +80,20 @@ int main() {
 	while(t--){
 	    int n,k;
 	    cin>>n>>k;
-	    char s;
+	    string s;
 	    cin>>s;
 	    vector<char>v;
-	    int num;
 	    for(int i=0;i<n;i++){
 	        if(i==0){
 	            v.push_back(s[i]);
 	            
 	        }else if(s[i]==s[i-1]){
-	            i++;
+	            continue;
 	        }else{
 	            v.push_back(s[i]);
 	        }
 	    }
-	    if(k<=v.size){
+	    if(k<=v.size()){
 	        cout<<"Yes\n";
 	    }else{
 	        cout<<"No\n";
