@@ -20,7 +20,7 @@ int main() {
 	            v.push_back(s[i]);
 	        }
 	    }
-	    if(k >= v.size() && k <= n){
+	    if(k<=v.size()){
 	        cout<<"Yes\n";
 	    }else{
 	        cout<<"No\n";
